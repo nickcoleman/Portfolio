@@ -12,7 +12,6 @@
 /*landscpae - zermat - https://goo.gl/Ej3xYI*/
 /*sky: https://goo.gl/8ZEjY8*/
 /*Air Force: https://goo.gl/06j4b3*/
-/*construction: https://goo.gl/QXJwt2*/
 
 html {
 	height: 100%;
@@ -148,7 +147,7 @@ hr {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	background-image: url("http://goo.gl/SS1wRU");
+	/*background-image: url("https://goo.gl/iS7kjX");*/
 	/*background-color: #2c3e50;*/
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
@@ -175,6 +174,11 @@ hr {
 
 #portfolioContent {
 	
+}
+
+.portfolioImage {
+  height: 300px;
+  width: 300px;
 }
 
 .connectSection {
