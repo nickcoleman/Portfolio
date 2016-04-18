@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>KeyTones -- a Patatap Clone Project</title>
+<!-- 	
+	This project focuses on incoporating exterinal libraries
+	To do that, we'll build a Patatap.com clone using the Paper.js (vector graphics)
+	and Howler.js (audio files) libraries 
+-->
+	<link rel="stylesheet" type="text/css" href="assets/css/keytones.css">
+	<script type="text/javascript" src="assets/js/lib/paper-full.min.js"></script>
+	<script type="text/paperscript" canvas="myCanvas">
+		// Create a Paper.js Path to draw a line into it:
+		var path = new Path();
+
+		// Give the stroke a color
+		path.strokeColor = 'black';
+		var start = new Point(200, 50);
+		
+		// Move to start and draw a line from there
+		path.moveTo(start);
+		
+		// Note the plus operator on Point objects.
+		// PaperScript does that for us, and much more!
+		path.lineTo(start + [ 200, 150 ]);
+
+		var myCircle = new Path.Circle(new Point(100, 70), 50);
+		myCircle.fillColor = 'black';
+
+		var myCircle2 = new Path.Circle(new Point(300, 300), 300);
+		myCircle2.fillColor = "red";
+	</script>
+</head>
+<body>
+	<canvas id="myCanvas" resize></canvas>
+</body>
+</html>
