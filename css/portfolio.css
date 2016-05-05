@@ -145,8 +145,8 @@ hr
 
 #aboutLeft
 {
-    font-size: 12px;
-    font-size: 2vw;
+    font-size: 120%;
+    /*font-size: 2vw;*/
     font-weight: 700;
 
     margin-top: 10%;
