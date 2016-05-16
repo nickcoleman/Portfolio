@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Simon - A Memory Game</title>
+	<link rel="stylesheet" type="text/css" href="assets\css\lib\bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="assets\css\simon.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,900italic,400italic,900,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+	<div class="container" id="header">
+		<h1>Simon - A Memory Game</h1>
+	</div>
+	<div class="container" id="gameArea">
+		<div class="container" id="game">
+			<div class="row" id="controls">
+				<div class="col-xs-4">
+					<div class="btn btn-primary btn-sm" id="start">Start</div>
+				</div>
+				<div class="col-xs-4" id="counterColumn"><span id="titleRound">Round</span><br><span id="counter">--</span></div>				
+				<div class="col-xs-4" id="strictColumn">
+					<input type="checkbox" id="strict"> Strict</input>
+				</div>
+			</div>
+
+				<div class="row" id="rowTop">
+					<div class="col-xs-6">
+						<button type="button" class="quadrant" id="quadrantBlue" value="1"></button>
+					</div>
+					<div class="col-xs-6">
+						<button type="button" class="quadrant" id="quadrantRed" value="2"></button>
+					</div>
+				</div>
+				<div class="row" id="rowBottom">
+					<div class="col-xs-6">
+						<button type="button" class="quadrant" id="quadrantYellow" value="3"></button>
+					</div>
+					<div class="col-xs-6">
+						<button type="button" class="quadrant" id="quadrantGreen" value="4"></button>
+					</div>
+				</div>
+
+		</div>
+	</div>
+	<div class="container" id="footer"><h3>Press "Start" For A New Game</h3></div>
+	<div class="container" id="rules"><h3>Slack Rules -- If You Make A Mistake, Sequence Is Replayed</h3></div>
+
+	<script type="text/javascript" src="assets\js\lib\jquery-2.2.2.min.js"></script>
+	<script type="text/javascript" src="assets\js\simon.js"></script>
+
+</body>
+</html>
