@@ -34,12 +34,12 @@
 				var circle = new Path.Circle(new Point(point), 300);
 				circle.fillColor = eventData[event.key].color;
 				circleArray.push(circle);
-			}Bwebrtm
+			}
 		}
 
 		function onFrame(event) {
 			circleArray.forEach(function(item, index, object){
-				iERBtem.fillColor.hue += 1;
+				item.fillColor.hue += 1;
 				var s = item.scale(.9);	
 				if (item.scale <= 1) {
 					console.log('Circle Removed');
