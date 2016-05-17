@@ -34,6 +34,21 @@ var strict = false;
 var winner = 20;
 var msgStrict = '<h3>Strict Rules -- Game Ends If You Make A Mistake</h3>'
 var msgSlack = '<h3>Slack Rules -- If You Make A Mistake, Sequence Is Replayed</h3>'
+var quadEvent = {
+	1: {
+		sound: new Howl({urls: ["http://www.itprojmgt.com/assets/sounds/simonSound1.mp3"]})
+	},
+	2: {
+		sound: new Howl({urls: ["http://www.itprojmgt.com/assets/sounds/simonSound2.mp3"]})
+	},
+	3: {
+		sound: new Howl({urls: ["http://www.itprojmgt.com/assets/sounds/simonSound3.mp3"]})
+	},
+	4: {
+		sound: new Howl({urls: ["http://www.itprojmgt.com/assets/sounds/simonSound4.mp3"]})
+	}
+
+};
 
 function showSequence(sequence) {
 	var i = 0;
@@ -51,21 +66,25 @@ function showSequence(sequence) {
 function lightQuadrant(color) {
 	if (color === 1) {
 		$('#quadrantBlue').css("background", "rgba(0, 0, 255, 1)");
+		quadEvent[1].sound.play();
 		setTimeout(function(){ 
 			$('#quadrantBlue').css("background", "rgba(0, 0, 255, .25)");
 		}, 250);				
 	} else if (color === 2) {
 		$('#quadrantRed').css("background", "rgba(255, 0, 0, 1)");
+		quadEvent[2].sound.play();
 		setTimeout(function(){ 
 			$('#quadrantRed').css("background", "rgba(255, 0, 0, .25)");
 		}, 250);				
 	} else if (color === 3) {
 		$('#quadrantYellow').css("background", "rgba(255, 255, 0, 1)");
+		quadEvent[3].sound.play();
 		setTimeout(function(){ 
 			$('#quadrantYellow').css("background", "rgba(255, 255, 0, .25)");
 		}, 250);				
 	} else if (color === 4) {
 		$('#quadrantGreen').css("background", "rgba(0, 255, 0, 1)");
+		quadEvent[4].sound.play();
 		setTimeout(function(){ 
 			$('#quadrantGreen').css("background", "rgba(0, 255, 0, .25)");
 		}, 250);				
@@ -90,7 +109,7 @@ function clearGame() {
 
 function turnPlayer() {
 	if (playerTurn) {
-		console.log('player turn');
+		
 		if (colorVal === sequence[counterPlayer] && counterPlayer < sequence.length)	{				
 			counterPlayer++;
 		} else if (colorVal != sequence[counterPlayer] && counterPlayer < sequence.length) {
@@ -114,9 +133,6 @@ function turnPlayer() {
 }
 
 function turnAI(){
-
-	console.log('counter ' + counter);
-	console.log('playerTurn ' + playerTurn);
 
 	if (!playerTurn && counter < winner) {
 		addToSequence();
