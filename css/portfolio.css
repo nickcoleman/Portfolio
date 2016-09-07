@@ -67,8 +67,8 @@ img {
 
 .homeSection
 {
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 
     color: #c0c0c0;
     background-image: url('https://goo.gl/Vr8Cfp');
