@@ -12,6 +12,7 @@
 /*landscpae - zermat - https://goo.gl/Ej3xYI*/
 /*sky: https://goo.gl/8ZEjY8*/
 /*Air Force: https://goo.gl/06j4b3*/
+/*office-local: ./assets/images/projectDesktop.jpg */
 
 html
 {
@@ -71,7 +72,7 @@ img {
     height: auto;
 
     color: #c0c0c0;
-    background-image: url('https://goo.gl/Vr8Cfp');
+    background-image: url('./assets/images/projectDesktop.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
