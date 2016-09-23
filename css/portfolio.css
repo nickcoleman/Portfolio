@@ -68,14 +68,16 @@ img {
 .homeSection
 {
     width: 100%;
-    height: auto;
+    /*height: auto;*/
 
     color: #c0c0c0;
-    background-image: url('https://goo.gl/Vr8Cfp');
+    background: url('https://goo.gl/Vr8Cfp') no-repeat center center fixed; 
+
+ /*   background-image: url('https://goo.gl/Vr8Cfp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    -webkit-background-size: cover;
+*/    -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: 100% 100%;
