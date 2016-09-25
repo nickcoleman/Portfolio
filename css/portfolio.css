@@ -127,8 +127,12 @@ img {
 {
     width: 100%;
     height: auto;
-
-    background-image: url('https://goo.gl/8ZEjY8');
+    background-image: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url('https://goo.gl/8ZEjY8');
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -154,8 +158,9 @@ img {
 #aboutLeft
 {
     /*font-size: 120%;*/
+    color: white;
     font-size: 1.5em;
-    font-weight: 700;
+    font-weight: normal;
 
     margin-top: 10%;
     margin-bottom: 25%;
@@ -163,7 +168,7 @@ img {
 }
 
 .bkgndLink {
-    color: #cc00cc;
+    color: #66ffff;
 }
 
 #aboutRight
@@ -262,7 +267,12 @@ img {
     height: 1024px;
 
     color: white;
-    background-image: url('http://goo.gl/ETZcJO');
+    background-image: 
+        linear-gradient(
+          rgba(0, 0, 0, 0.25),
+          rgba(0, 0, 0, 0.25)
+        ),
+        url('http://goo.gl/ETZcJO');
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
