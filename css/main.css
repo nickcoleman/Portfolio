@@ -171,6 +171,12 @@ img.navbarLogo {
     text-shadow: 2px 1px 2px #000;
 }
 
+/*.aboutContent {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-auto: auto;
+}*/
+
 #aboutLeft
 {
     /*font-size: 120%;*/
