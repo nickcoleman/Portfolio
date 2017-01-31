@@ -1,17 +1,18 @@
 /*color options*/
-/*#C0C0C0 - Silver*/
-/*#2c3e50 - grayish blue*/
-/*#00004d - dark blue*/
-/*#adbfd2 - light gray*/
-/*#ffff99 - light yellow*/
+/*Silver: #C0C0C0; */
+/*grayish blue: #2c3e50; */
+/*dark blue: #00004d; */
+/*light gray: #adbfd2; */
+/*light yellow: #ffff99; */
 /*UnSplash Images*/
-/*office: https://goo.gl/Vr8Cfp*/
-/*architecture: https://goo.gl/bz0XSI*/
-/*landscape - cloud shadow: https://goo.gl/8I89BR*/
-/*landscape - Park City: http://goo.gl/ETZcJO*/
-/*landscpae - zermat - https://goo.gl/Ej3xYI*/
-/*sky: https://goo.gl/8ZEjY8*/
-/*Air Force: https://goo.gl/06j4b3*/
+/*office: https://goo.gl/Vr8Cfp  */
+/*architecture: https://goo.gl/bz0XSI  */
+/*landscape - cloud shadow: https://goo.gl/8I89BR  */
+/*landscape - Park City: http://goo.gl/ETZcJO  */
+/*landscpae - zermat - https://goo.gl/Ej3xYI  */
+/*sky: https://goo.gl/8ZEjY8  */
+/*Air Force: https://goo.gl/06j4b3 */
+/*Code: https://unsplash.com/photos/xekxE_VR0Ec */
 /*office-local: ./assets/images/projectDesktop.jpg */
 
 html
@@ -22,9 +23,6 @@ html
 body
 {
     font-family: 'Lato', sans-serif;
-
-    padding-top: 50px;
-
     background-color: #2c3e50;
 }
 
@@ -33,10 +31,6 @@ hr
     color: #c0c0c0;
     border-top: 2px solid #c0c0c0;
     border-bottom: 2px solid rgba(0,0,0,.2);
-}
-
-img {
-    width: 100%;
 }
 
 img.navbarLogo {
@@ -56,27 +50,37 @@ img.navbarLogo {
     background-color: #c0c0c0;
 }
 
-.navbar-inverse .navbar-nav > li > a
-{
-    color: #000;
-}
-
 .navbar-inverse .navbar-brand
 {
     color: #000;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover,
-.navbar-inverse .navbar-nav > li > a:focus
+.navbar-inverse .navbar-nav .nav-link
+{
+    color: #00004d;
+}
+
+.navbar-toggler-icon
+{
+    color: #00004d;
+}
+
+.nav-link > a:hover,
+.nav-link > a:focus
 {
     /*background-color: #adbfd2;*/
     color: #ff9;
 }
 
+/***********************************
+        Home Section
+***********************************/
 .homeSection
 {
     width: 100%;
     /*height: auto;*/
+    height: 800px;
+    padding-bottom: 100px;
 
     color: #c0c0c0;
     background: url('https://goo.gl/Vr8Cfp') no-repeat center center fixed;
@@ -116,6 +120,7 @@ img.navbarLogo {
 }
 
 #homeSocialContainer {
+    margin-top: 40px;
     margin-bottom: 40px;
     width: 90%;
 }
@@ -127,13 +132,18 @@ img.navbarLogo {
     margin-bottom: 10px;
 
     background-color: #c0c0c0;
+    color: #00004d;
     box-shadow: 2px 1px 2px #000;
 }
 
+/****************************************
+        About Section
+****************************************/
 .aboutSection
 {
     width: 100%;
     height: auto;
+    padding-top: 50px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://goo.gl/8ZEjY8");
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -191,17 +201,22 @@ img.navbarLogo {
     -2px -2px 3px 3px #c0c0c0;
 }
 
+/*****************************************
+            Portfolio Section
+*****************************************/
 .portfolioSection
 {
     width: 100%;
     height: auto;
-    margin-bottom: 60px;
+    padding-top: 50px;
+    padding-bottom: 60px;
 
     color: #c0c0c0;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    /*background-image: url("https://goo.gl/iS7kjX");*/
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://unsplash.com/photos/xekxE_VR0E");
+    /*background-image: url("https://unsplash.com/photos/xekxE_VR0E");*/
     /*background-color: #2c3e50;*/
     -webkit-background-size: cover;
        -moz-background-size: cover;
@@ -240,33 +255,21 @@ img.navbarLogo {
     margin-bottom: 20px;
 }
 
-.imageHolder {
-    text-align: center;
-    /*margin: 40px;*/
-
-}
-
-.projectImage {
-    margin-bottom: 40px;
-    width: 33%;
-    min-width: 300px;
-    display: inline-block;
-    box-sizing: border-box;
-    padding: 3%;
-    height: 300px;
+.portfolioCard {
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
-/*.portfolioImage
-{
-    width: 300px;
-    height: 300px;
-}*/
+/****************************************
+            Content Section
+****************************************/
 
 .connectSection
 {
     width: 100%;
     height: 1024px;
+    padding-top: 50px;
 
     color: white;
     background-image:
@@ -284,12 +287,22 @@ img.navbarLogo {
             background-size: cover;
 }
 
-#connectContent
+.connectHeader > h2
 {
-    font-size: 2em;
-    font-weight: 700;
+    font-size: 3.5em;
+    font-weight: bold 700;
 
-    margin-top: 20%;
-    margin-bottom: 25%;
-    margin-left: 10%;
+    margin-top: 5%;
+
+    text-align: center;
+
+    color: rgba(255, 255, 255, .6);
+    text-shadow: 2px 1px 2px #000;
+}
+
+.connectContent
+{
+
+    margin: 10%;
+
 }

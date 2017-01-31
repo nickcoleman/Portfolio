@@ -1,72 +1,57 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<title>Portfolio - Nick Coleman</title>
-		<!-- CSS: Bootstrap, Font-Awesome, Google Fonts, local -->
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 		<link href='https://fonts.googleapis.com/css?family=Lato:400,700italic,900italic,400italic,900,700' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" type="text/css" href="css/portfolio.css">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
 		<link href="./favicon.ico" rel="icon" type="image/x-icon"/>
-	</head>
+  </head>
+  <body>
+    <nav class="navbar navbar-toggleable-sm navbar-inverse fixed-top">
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <a class="navbar-brand" href="#"><img class='navbarLogo' src="./images/logo.png" /> Nick Coleman</a>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <div class="navbar-nav">
+          <a class="nav-item nav-link" href="#home">Home</a>
+          <a class="nav-item nav-link" href="#about">About</a>
+          <a class="nav-item nav-link" href="#portfolio">Portfolio</a>
+          <a class="nav-item nav-link" href="#connect">Connect</a>
+        </div>
+      </div>
+    </nav>
 
-	<body>
-
-		<!-- Top Navigation Bar -->
-		<nav class="navbar navbar-inverse navbar-fixed-top">
-		  <div class="container">
-		    <div class="navbar-header">
-		    	<!-- collapsed menu button -->
-		    	<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				    <span class="sr-only">Toggle navigation</span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-				    <span class="icon-bar"></span>
-			    </button>
-		     	<a class="navbar-brand" href="#home"><img class='navbarLogo' src="./assets/images/logo.png" /> FS Dev - Proj Mgt</a>
-		    </div>
-
-		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-		    <ul class="nav navbar-nav navbar-right">
-        		<li><a href="#home">Home</a></li>
-        		<li><a href="#about">About</a></li>
-        		<li><a href="#portfolio">Portfolio</a></li>
-        		<li><a href="#connect">Connect</a></li>
-		    </div>
-		  </div>
-		</nav>
-
-		<!-- Section - Home -->
+    <!-- Section - Home -->
 		<div class="container homeSection">
 			<a name="home"></a>
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-xs-12">
 					<div id="homeContent">
 						<h1>Nick Coleman</h1>
-						<h3>Full Stack Developer - Project Manager</h3>
+						<h3>Full Stack Developer</h3>
 						<div class="container" id="homeSocialContainer">
 							<div class="row socialRow"  >
 								<hr>
-								<div class=" col-md-3 col-sm-6 col-xs-12">
+								<div class="col">
 									<a href="https://github.com/nickcoleman" target="blank">
-										<div class="btn btn-default btn-lg homeButton"><i class="fa fa-github"></i> GitHub</div>
+										<div class="btn btn-secondary btn-md homeButton"><i class="fa fa-github"></i> GitHub</div>
 									</a>
 								</div>
-								<div class=" col-md-3 col-sm-6 col-xs-12">
+								<div class="col">
 									<a href="https://www.linkedin.com/in/nick-coleman" target="blank">
-										<div class="btn btn-default btn-lg homeButton"><i class="fa fa-linkedin"></i> Linked-In</div>
+										<div class="btn btn-secondary btn-md homeButton"><i class="fa fa-linkedin"></i> Linked-In</div>
 									</a>
 								</div>
-								<div class=" col-md-3 col-sm-6 col-xs-12">
+								<div class="col">
 									<a href="https://www.facebook.com/itprojmgt/" target="blank">
-										<div class="btn btn-default btn-lg homeButton"><i class="fa fa-facebook"></i> Facebook</div>
-									</a>
-								</div>
-								<div class=" col-md-3 col-sm-6 col-xs-12">
-									<a href="https://twitter.com/itprojmgt" target="blank">
-										<div class="btn btn-default btn-lg homeButton"><i class="fa fa-twitter"></i> Twitter</div>
+										<div class="btn btn-secondary btn-md homeButton"><i class="fa fa-facebook"></i> Facebook</div>
 									</a>
 								</div>
 							</div>
@@ -76,30 +61,52 @@
 			</div>
 		</div>
 
-				<!-- Section - About -->
+		<!-- Section - About -->
 		<div class="container aboutSection">
 			<a name="about"></a>
-			<div class="row">
+			<div class="row justify-content-center">
 				<div class="col-xs-12 aboutContent aboutHeader">
-					<h2>Full Stack Development and Project Management</h2>
+					<h2>Full Stack Development</h2>
 				</div>
 			</div>
 			<div class="row" id="aboutContentRow" >
 				<div class="col-sm-6 col-xs-12 aboutContent">
 					<div id="aboutLeft">
-
-					<p>Over 30 years experience in the computer/communications career field</p>
-					<p><a class="bkgndLink" href="http://www.projectmanagement.com/profile/nickcoleman" target="blank">Project Management Professional (PMP) -- PMI Cert #: 1342546</a></p>
-					<p> I'm retired Air Force Lieutenant Colonel and spent career in the Information Technology field. Post-military, I've run IT Operations/Project Management at multiple startups. And, I have my own company that focuses on <a class="bkgndLink" href="http://www.realestateclientmanagement.com/" target="blank">Customer Relationship Management software</a>.</p>
-					<p>I've always loved creative process of developing software...both it's design and coding aspects...and helping others. This includes working pro-bono as a mentor with <a class="bkgndLink" href="http://www.pandolabs.org/" target="_blank" >PandoLabs</a> to train low-income service industry and rural workers to become full-stack web developers.</p>
-					<p><a class="bkgndLink" href="http://www.itprojmgt.com/assets/docs/resume.pdf" target="_blank">See Full Resume</a></p>
+						<p>Over 30 years experience in the computer/communications career field</p>
+						<p>
+							<a class="bkgndLink" href="http://www.projectmanagement.com/profile/nickcoleman" target="blank">
+								Project Management Professional (PMP) -- PMI Cert #: 1342546
+							</a>
+						</p>
+						<p> I'm a retired Air Force Lieutenant Colonel and spent my career in the
+							Information Technology field. Post-military, I've run IT Operations/Project
+							Management at multiple startups. And, I have my own company that focuses on
+							<a class="bkgndLink" href="http://www.realestateclientmanagement.com/" target="blank">
+								Customer Relationship Management software
+							</a>.
+						</p>
+						<p> I've always loved the creative process of developing software...
+							both it's design and coding aspects. So, I pivoted to software development as a career focus.
+							My background gives me a unique perspective on the entire software life-cycle and the importance
+							of developing software that is built with the customer in mind at it's core.
+						</p>
+						<p>I also love helping others.  This includes working pro-bono as a mentor with
+							<a class="bkgndLink" href="http://www.pandolabs.org/" target="_blank" >PandoLabs</a>
+							to train low-income service industry and rural workers to become full-stack web
+							developers. And, assisting self-motivated individuals learn to code through through
+							FreeCodeCamp Salt Lake City.
+						</p>
+						<p>
+							<a class="bkgndLink" href="http://www.itprojmgt.com/assets/docs/resume.pdf" target="_blank">
+								See Full Resume
+							</a>
+						</p>
 					</div>
 				</div>
-				<div class="col-sm-6 hidden-xs aboutContent">
+				<div class="col-sm-6 clearfix hidden-xs-down aboutContent">
 					<div id="aboutRight">
 						<img class="imageCircle" src="http://goo.gl/NZviSk">
 					</div>
-
 				</div>
 			</div>
 		</div>
@@ -108,78 +115,124 @@
 
 		<div class="container portfolioSection">
 			<a name="portfolio"></a>
-		  	<div class="row">
+		  	<div class="row justify-content-center">
 			    <div class="col-xs-12 portfolioHeader">
 			      <h2>Portfolio</h2>
-			      <h3>Example Projects that are part of Full Stack Certification</h3>
+					</div>
+			 	</div>
+				<div class="container">
+					<div class="row">
+						<!-- Next Card -->
+            <div class="col-md-6 col-lg-4">
+							<div class="card portfolioCard">
+								<img src="./images/BarleyHopper_MainScene.png" class="card-img-top img-fluid">
+								<div class='card-block text-center'>
+									<h2 class='card-title'>Barley Hopper</h2>
+								</div>
+								<div class="card-block text-left">
+									<p class="card-text">
+										Mobile application.  Allows users to find breweries by either their geolocation
+										or by providing a location.  Built using React-Native w/ Redux.
+									</p>
+									<p class="card-text">Frameworks</p>
+									<div class="card-text text-left">
+										<ul>
+											<li>React-Native</li>
+											<li>Redux</li>
+											<li>api: AirBnB Mapping</li>
+											<li>api: Google GeoLocation</li>
+										</ul>
+									</div>
+									<div class="card-text text-center">
+										<a href="" target="blank" class="card-link">Live</a>
+										<a href="https://github.com/nickcoleman/barleyHop" target="blank" class="card-link">GitHub</a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- Next Card -->
+            <div class="col-md-6 col-lg-4">
+							<div class="card portfolioCard">
+								<img src="http://lorempixel.com/400/400/" class="card-img-top img-fluid">
+								<div class='card-block text-center'>
+									<h2 class='card-title'>Project 2</h2>
+								</div>
+								<div class="card-block text-center">
+									<div class="card-text">Project Description</div>
+									<div class="card-text">Frameworks:</div>
+									<a href="" target="blank" class="card-link">Live</a>
+									<a href="" target="blank" class="card-link">GitHub</a>
+								</div>
+							</div>
+						</div>
+						<!-- Next Card -->
+            <div class="col-md-6 col-lg-4">
+							<div class="card portfolioCard">
+								<img src="http://lorempixel.com/400/400/" class="card-img-top img-fluid">
+								<div class='card-block text-center'>
+									<h2 class='card-title'>Project 3</h2>
+								</div>
+								<div class="card-block text-center">
+									<div class="card-text">Project Description</div>
+									<div class="card-text">Frameworks:</div>
+									<a href="" target="blank" class="card-link">Live</a>
+									<a href="" target="blank" class="card-link">GitHub</a>
+								</div>
+							</div>
+						</div>
+						<!-- End Project Cards -->
+					</div>
 				</div>
-		 	</div>
-
-			<div class="container projects">
-				<div class="imageHolder">
-
-					<div class="projectImage">
-						<!-- Simon project -->
-				        <a href="http://www.itprojmgt.com/simon.html" target="blank">
-				        <img src="assets/images/simon.png" class="portfolioImage" border='0'></a>
-					</div>
-					<div class="projectImage">
-						<!-- keytones project -->
-				        <a href="http://www.itprojmgt.com/keytones.html" target="blank">
-				        <img src="assets/images/keytones.png" class="portfolioImage" border='0'></a>
-					</div>
-					<div class="projectImage">
-				        <a href="http://codepen.io/nickcoleman/full/oxavKz/" target="blank">
-				        <img src="https://goo.gl/YL2ckz" class="portfolioImage" border='0'></a>
-					</div>
-					<div class="projectImage">
-				        <a href="http://www.itprojmgt.com/todo.html" target="blank">
-				        <img src="https://goo.gl/YNTLw6" class="portfolioImage" border='0'></a>
-					</div>
-					<div class="projectImage">
-				        <a href="http://codepen.io/nickcoleman/full/reNNGr/" target="blank">
-				        <img src="https://goo.gl/cJeC4K" class="portfolioImage" border='0'></a>
-					</div>
-					<div class="projectImage">
-				        <a href="http://codepen.io/nickcoleman/full/YqNmOV" target="blank">
-				        <img src="https://goo.gl/vGEYsY" class="portfolioImage" forder='0'></a>
-					</div>
-				</div>
-			</div>
 		</div>
+
 		<!-- Section - Connect -->
 		<div class="container connectSection">
 			<a name="connect"></a>
-			<div class="row" id="connectContent">
-				<div class="col-sm-12 col-md-6">
-					<h1>Connect with Nick Coleman at:</h1>
-					<h3>Email: nick@itprojmgt.com</h3>
+			<div class="row justify-content-center">
+				<div class="col-xs-12 connectHeader">
+					<h2>Connect</h2>
 				</div>
-				<div class="col-sm-12 col-md-6">
-					<div class="row" id="connectRight">
-						<div class="col-xs-12">
-							<a href="https://www.facebook.com/itprojmgt/" target="blank">
-								<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-facebook"></i> Facebook</button>
-							</a>
-						</div>
-						<div class="col-xs-12">
-							<a href="https://www.linkedin.com/in/nick-coleman" target="blank">
-								<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-linkedin"></i> Linked-In</button>
-							</a>
-						</div>
-						<div class="col-xs-12">
-							<a href="https://github.com/nickcoleman" target="blank">
-								<button type="button" class="btn btn-default btn-lg homeButton"><i class="fa fa-github"></i> GitHub</button>
-							</a>
-						</div>
-					</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col connectContent">
+					<h2>Nick Coleman</h2>
+					<h3>Google Voice: 435.200.3347</h3>
+					<h3>Email: Nick@ITProjMgt.com</h3>
+				</div>
+				<div class="col connectContent">
+					<h5>
+						If you need a software developer who understands that customer experience with a software
+						application directly impacts profitability and who understands software project management,
+						takes ownership of problems, and has helped start-up companies succeed, get in touch and we'll chat.
+					</h5>
+				</div>
+			</div>
+			<div class="row connectContentSocial justify-content-center">
+				<div class="col">
+				</div>
+				<div class="col">
+					<a href="https://www.facebook.com/itprojmgt/" target="blank">
+						<button type="button" class="btn btn-secondary btn-md homeButton"><i class="fa fa-facebook"></i> Facebook</button>
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://www.linkedin.com/in/nick-coleman" target="blank">
+						<button type="button" class="btn btn-secondary btn-md homeButton"><i class="fa fa-linkedin"></i> Linked-In</button>
+					</a>
+				</div>
+				<div class="col">
+					<a href="https://github.com/nickcoleman" target="blank">
+						<button type="button" class="btn btn-secondary btn-md homeButton"><i class="fa fa-github"></i> GitHub</button>
+					</a>
+				</div>
+				<div class="col">
 				</div>
 			</div>
 		</div>
 
-
-		<!-- JavaScript: JQuery and Bootstrap-->
-		<script src="http://code.jquery.com/jquery-2.1.4.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-	</body>
+    <!-- jQuery first, then Tether, then Bootstrap JS. -->
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  </body>
 </html>
