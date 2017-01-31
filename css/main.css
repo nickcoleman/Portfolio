@@ -57,11 +57,15 @@ img.navbarLogo {
 
 .navbar-inverse .navbar-nav .nav-link
 {
-    color: #00004d;
+    background: color: #00004d;
 }
 
-.navbar-toggler-icon
+.navbar-inverse .navbar-toggler
 {
+    border-color: #00004d;
+}
+
+.navbar-inverse .navbar-toggler-icon {
     color: #00004d;
 }
 
