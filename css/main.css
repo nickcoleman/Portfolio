@@ -40,9 +40,10 @@ img.navbarLogo {
     padding-bottom: 5px;
 }
 
-.jumbotron
+.socialButton
 {
-    color: #00004d;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .navbar-inverse
@@ -69,11 +70,15 @@ img.navbarLogo {
     color: #00004d;
 }
 
+.navbar-inverse .navbar-nav .nav-link {
+    color: #00004d;
+}
+
 .nav-link > a:hover,
 .nav-link > a:focus
 {
     /*background-color: #adbfd2;*/
-    color: #ff9;
+    color: #2c3e50;
 }
 
 /***********************************
@@ -86,8 +91,9 @@ img.navbarLogo {
     height: 800px;
     padding-bottom: 100px;
 
-    color: #c0c0c0;
-    background: url('https://goo.gl/Vr8Cfp') no-repeat center center fixed;
+    /*color: #c0c0c0;*/
+    /*background: url('https://goo.gl/Vr8Cfp') no-repeat center center fixed;*/
+    background: url('http://goo.gl/ETZcJO') no-repeat center center fixed;
 
     -webkit-background-size: cover;
        -moz-background-size: cover;
@@ -101,16 +107,16 @@ img.navbarLogo {
     padding-top: 25%;
     padding-right: 15%;
     padding-left: 15%;
-
+    color: white;
     text-align: center;
 }
 
 #homeContent > h1
 {
-    font-size: 5em;
+    font-size: 4em;
     font-weight: 700;
 
-    color: rgba(255, 255, 255, .6);
+    /*color: rgba(255, 255, 255, .6);*/
     text-shadow: 2px 1px 2px #000;
 }
 
@@ -119,7 +125,7 @@ img.navbarLogo {
     font-size: 2.5em;
     font-weight: 700px;
 
-    color: rgba(255, 255, 255, .7);
+    /*color: rgba(255, 255, 255, .7);*/
     text-shadow: 2px 1px 2px #000;
 }
 
@@ -131,8 +137,8 @@ img.navbarLogo {
 
 .homeButton
 {
-    font-weight: 700px;
-    margin-left: -40px;
+    /*font-weight: 700px;*/
+    /*margin-left: 10px;*/
     margin-bottom: 10px;
 
     background-color: #c0c0c0;
@@ -167,11 +173,12 @@ img.navbarLogo {
 
     text-align: center;
 
-    color: rgba(255, 255, 255, .6);
-    text-shadow: 2px 1px 2px #000;
+    color: white;
+    /*color: rgba(255, 255, 255, .6);*/
+    text-shadow: 2px 1px 2px #00004d;
 }
 
-/*.aboutContent {
+/*.aboutContentRow {
     max-width: 1000px;
     margin-left: auto;
     margin-auto: auto;
@@ -179,14 +186,13 @@ img.navbarLogo {
 
 #aboutLeft
 {
-    /*font-size: 120%;*/
     color: white;
     font-size: 1.5em;
     font-weight: normal;
 
-    margin-top: 10%;
-    margin-bottom: 25%;
-    margin-left: 10%;
+    padding-top: 10%;
+    padding-bottom: 25%;
+    padding-left: 10%;
 }
 
 .bkgndLink {
@@ -244,8 +250,9 @@ img.navbarLogo {
 
     text-align: center;
 
-    color: rgba(255, 255, 255, .6);
-    text-shadow: 2px 1px 2px #000;
+    /*color: rgba(255, 255, 255, .6);*/
+    color: white;
+    text-shadow: 2px 1px 2px #00004d;
 }
 
 .portfolioHeader > h3
@@ -266,9 +273,14 @@ img.navbarLogo {
 }
 
 .portfolioCard {
+    color: #00004d;
     margin-top: 10px;
     margin-bottom: 10px;
-    min-height: 1000px;
+    min-height: 900px;
+}
+
+.cardHeadder, .cardDescription{
+    padding: 10px;
 }
 
 
@@ -307,8 +319,9 @@ img.navbarLogo {
 
     text-align: center;
 
-    color: rgba(255, 255, 255, .6);
-    text-shadow: 2px 1px 2px #000;
+    /*color: rgba(255, 255, 255, .6);*/
+    color: white;
+    text-shadow: 2px 1px 2px #00004d;
 }
 
 .connectContent
