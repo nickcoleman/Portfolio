@@ -337,7 +337,8 @@ img.navbarLogo {
 
 .connectLink > a,
 .connectLink > a:hover,
-.connectLink > a:focus
+.connectLink > a:focus,
+.connectLink > a:visited
 {
     color: white;
     text-decoration: none;
