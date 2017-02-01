@@ -90,8 +90,6 @@ img.navbarLogo {
     /*height: auto;*/
     height: 800px;
     padding-bottom: 100px;
-
-    /*color: #c0c0c0;*/
     /*background: url('https://goo.gl/Vr8Cfp') no-repeat center center fixed;*/
     background: url('http://goo.gl/ETZcJO') no-repeat center center fixed;
 
@@ -300,7 +298,7 @@ img.navbarLogo {
           rgba(0, 0, 0, 0.25),
           rgba(0, 0, 0, 0.25)
         ),
-        url('http://goo.gl/ETZcJO');
+        url('https://goo.gl/Vr8Cfp');
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
