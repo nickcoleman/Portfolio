@@ -90,8 +90,7 @@ img.navbarLogo {
     /*height: auto;*/
     height: 800px;
     padding-bottom: 100px;
-    /*background: url('https://goo.gl/Vr8Cfp') no-repeat center center fixed;*/
-    background: url('http://goo.gl/ETZcJO') no-repeat center center fixed;
+    background: url("../images/parkCityUtah.png") no-repeat center center fixed;
 
     -webkit-background-size: cover;
        -moz-background-size: cover;
@@ -156,7 +155,7 @@ img.navbarLogo {
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
         ),
-        url( 'https://goo.gl/8ZEjY8' );
+        url( '../images/sky.png' );
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -240,16 +239,20 @@ img.navbarLogo {
     padding-bottom: 60px;
 
     color: #c0c0c0;
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url("https://unsplash.com/photos/xekxE_VR0E");
+    background-image: linear-gradient(
+          rgba(0, 0, 0, 0.5),
+          rgba(0, 0, 0, 0.5)
+        ),
+        url("https://unsplash.com/photos/xekxE_VR0E");
 
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: 100% 100%;
-            background-size: cover;
+            background-size: cover;*/
 }
 
 .portfolioHeader > h2
@@ -306,7 +309,7 @@ img.navbarLogo {
           rgba(0, 0, 0, 0.25),
           rgba(0, 0, 0, 0.25)
         ),
-        url('https://goo.gl/Vr8Cfp');
+        url('../images/desktop.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
