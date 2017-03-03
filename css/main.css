@@ -90,13 +90,24 @@ img.navbarLogo {
     /*height: auto;*/
     height: 800px;
     padding-bottom: 100px;
-    background: url("../images/parkCityUtah.png") no-repeat center center fixed;
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    overflow-y: hidden;
+    background: url("../images/bg-pattern.png"), #7b4397;
+    /* fallback for old browsers */
+    background: url("../images/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: url("../images/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    /*background: url("../images/parkCityUtah.png") no-repeat center center fixed;
 
     -webkit-background-size: cover;
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: 100% 100%;
-            background-size: cover;
+            background-size: cover;*/
 }
 
 #homeContent
@@ -151,7 +162,9 @@ img.navbarLogo {
     width: 100%;
     height: auto;
     padding-top: 50px;
-    background-image: linear-gradient(
+    background: #fdcc52
+
+    /*background-image: linear-gradient(
         rgba(0, 0, 0, 0.5),
         rgba(0, 0, 0, 0.5)
         ),
@@ -162,7 +175,7 @@ img.navbarLogo {
        -moz-background-size: cover;
          -o-background-size: cover;
             background-size: 100% 100%;
-            background-size: cover;
+            background-size: cover;*/
 }
 
 .aboutHeader > h2
@@ -187,7 +200,7 @@ img.navbarLogo {
 
 #aboutLeft
 {
-    color: white;
+    /*color: white;*/
     font-size: 1.5em;
     font-weight: normal;
 
@@ -198,7 +211,7 @@ img.navbarLogo {
 
 .aboutLink > a
  {
-    color: #66ffff;
+    /*color: #66ffff;*/
     text-decoration: none
 }
 
@@ -238,7 +251,9 @@ img.navbarLogo {
     padding-top: 50px;
     padding-bottom: 60px;
 
+
     color: #c0c0c0;
+    /*background: #fdcc52*/
     /*background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
@@ -253,6 +268,7 @@ img.navbarLogo {
          -o-background-size: cover;
             background-size: 100% 100%;
             background-size: cover;*/
+
 }
 
 .portfolioHeader > h2
