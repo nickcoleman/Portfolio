@@ -59,12 +59,12 @@
 								<hr>
 								<div class="col-xs-12 col-md-6">
 									<a href="https://github.com/nickcoleman" target="blank">
-										<div class="btn btn-secondary btn-sm homeButton"><i class="fa fa-github"></i> GitHub</div>
+										<div class="btn btn-outline-secondary btn-lg homeButton"><i class="fa fa-github"></i></div>
 									</a>
 								</div>
 								<div class="col-xs-12 col-md-6">
 									<a href="https://www.linkedin.com/in/nick-coleman" target="blank">
-										<div class="btn btn-secondary btn-sm homeButton"><i class="fa fa-linkedin"></i> Linked-In</div>
+										<div class="btn btn-outline-secondary btn-lg homeButton"><i class="fa fa-linkedin"></i></div>
 									</a>
 								</div>
 								<!-- <div class="col-xs-12 col-md-4">
@@ -114,8 +114,16 @@
 										</ul>
 									</div>
 									<div class="card-text text-center">
-                    <a href="https://appetize.io/app/n8qecgxtnnfke4n7gvpd8bw9rm" target="blank" class="card-link">Simulator</a>
-										<a href="https://github.com/nickcoleman/barleyhopper" target="blank" class="card-link">GitHub</a>
+										<div class="col">
+											<a href="https://itunes.apple.com/us/app/barley-hopper/id1207606499" target="blank" class="card-link" >
+												<img class="img-fluid appButton" src='./images/app-store-badge.svg' />
+											</a>
+										</div>
+										<div class="col">
+											<a href="https://github.com/nickcoleman/barleyhopper" target="blank" class="card-link">
+												<img class="img-fluid githubButton" src='./images/mark-github.svg' />
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -124,14 +132,18 @@
             <!-- Meetup In The Middle -->
             <div class="col-md-6 col-lg-4">
 							<div class="card portfolioCard">
-								<img src="./images/MeetInTheMiddleLogo.png" alt="Meetup In The Middle App">
+								<img class="img-fluid projectImage" src="./images/MeetInTheMiddleLogo.png" alt="Meetup In The Middle App">
+
 								<div class='text-center cardHeader'>
 									<h2 class='card-title'>Meetup In The Middle</h2>
-									<h4 class='card-text'>Sub-Title</h4>
+									<h4 class='card-text'>Coordinating meeting that people will want to attend!</h4>
 								</div>
 								<div class="text-center cardContent">
 									<p class="card-text cardDescription">
-										App description
+										Finding meeting locations that are equal distance from the
+										locations of people planning to attend. Participants vote on
+										a location (e.g. coffee shop) in that central location area
+										discuss the meeting in a live chat.
 									</p>
 									<p class="card-text">Frameworks - Features</p>
 									<div class="card-text text-left">
@@ -139,12 +151,25 @@
 											<li>React-Native</li>
 											<li>Redux</li>
 											<li>Firebase</li>
-											<li></li>
+											<li>Exponent XDE</li>
 										</ul>
 									</div>
 									<div class="card-text text-center">
-										<a href="" target="blank" class="card-link">Live</a>
-										<a href="https://github.com/nickcoleman/" target="blank" class="card-link">GitHub</a>
+										<div class="col">
+											<a href="https://itunes.apple.com/us/app/meetup-in-the-middle/id1207356166" target="blank" class="card-link" >
+												<img class="img-fluid appButton" src='./images/app-store-badge.svg' />
+											</a>
+										</div>
+										<div class="col">
+											<a href="https://itunes.apple.com/us/app/meetup-in-the-middle/id1207356166" target="blank" class="card-link" >
+												<img class="img-fluid appButton" src='./images/google-play-badge.svg' />
+											</a>
+										</div>
+										<div class="col">
+											<a href="https://github.com/nickcoleman/" target="blank" class="card-link">
+												<img class="img-fluid githubButton" src='./images/mark-github.svg' />
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -177,8 +202,16 @@
 										</ul>
 									</div>
 									<div class="card-text text-center">
-										<a href="https://yaarn.herokuapp.com/" target="blank" class="card-link">Live</a>
-										<a href="https://github.com/megelismi/tell_your_story_app" target="blank" class="card-link">GitHub</a>
+										<div class="col">
+											<button href="https://yaarn.herokuapp.com/" target="blank" class="btn btn-outline-warning btn-xl">
+												Live Website
+											</button>
+										</div>
+										<div class="col">
+											<a href="https://github.com/megelismi/tell_your_story_app" target="blank" class="card-link">
+												<img class="img-fluid githubButton" src='./images/mark-github.svg' />
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -208,8 +241,16 @@
 										</ul>
 									</div>
 									<div class="card-text text-center">
-										<a href="https://germanrepitition.herokuapp.com/" target="blank" class="card-link">Live</a>
-										<a href="https://github.com/davellaj/flashCardApp" target="blank" class="card-link">GitHub</a>
+										<div class="col">
+											<button href="https://germanrepitition.herokuapp.com/" target="blank" class="btn btn-outline-success btn-xl">
+												Live Website
+											</button>
+										</div>
+										<div class="col">
+											<a href="https://github.com/davellaj/flashCardApp" target="blank" class="card-link">
+												<img class="img-fluid githubButton" src='./images/mark-github.svg' />
+											</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -260,35 +301,41 @@
 			<div class="row" id="aboutContentRow" >
 				<div class="col-sm-8 col-xs-12 aboutContent">
 					<div id="aboutLeft">
-						<p>Over 30 years experience in the Information Technology career field</p>
-						<p> I'm a retired Air Force Lieutenant Colonel and spent my career in the
-							computer and networking field. Post-military, I've run IT Operations/Project
-							Management at multiple startups. And, I have my own company that focuses on
-							<span class="aboutLink"><a href="http://www.realestateclientmanagement.com/" target="blank">
-								Customer Relationship Management
-							</a></span> software.
-						</p>
-						<p> I've always loved the creative process of developing software...
-							both it's design and coding aspects. So, I pivoted to software development as a career focus.
-							My background gives me a unique perspective on the entire software life-cycle and the importance
-							of developing software that is built with the customer in mind at it's core.
-						</p>
-						<p>I also love helping others.  This includes working pro-bono as a mentor with
-							<span class="aboutLink"><a href="http://www.pandolabs.org/" target="_blank" >
-								PandoLabs
-							</a></span>
-							to train low-income service industry and rural workers to become full-stack web
+            <p>I’m a full stack web developer, living in Park City, Utah.  I first
+              started coding as a Assembler Language programmer on Missile-Space
+              Track systems in the US Air Force. I spent my AF career in the IT
+              field managing computer-communications infrastructure and software projects.
+              And, retired as an Air Force Lieutenant Colonel.</p>
+            <p>Post military I worked with a number of start-up software companies
+               … eventually starting my own that focused on
+               <span class="aboutLink">
+                 <a href="http://www.realestateclientmanagement.com/" target="blank">
+ 								  Customer Relationship Management
+ 							  </a>
+              </span> software.</p>
+            <p>I’ve always loved the creative process and teamwork that goes into
+              developing a software product.  So, I refocused my career
+              into that passion as a software developer.  I would love to discuss how I
+							could help develop your software products.</p>
+						<p>I also enjoy helping others.  This includes working pro-bono as a mentor with
+							<span class="aboutLink">
+                <a href="http://www.pandolabs.org/" target="_blank" >
+								  PandoLabs
+							  </a>
+              </span> to train low-income service industry and rural workers to become full-stack web
 							developers. And, assisting self-motivated individuals to learn to code through through
 							FreeCodeCamp Salt Lake City.
 						</p>
 						<p>
-							<span class="aboutLink"><a href="http://www.projectmanagement.com/profile/nickcoleman" target="blank">
-								Project Management Professional (PMP) -- PMI Cert #: 1342546
-							</a></span>
+							<span class="aboutLink">
+                <a href="http://www.projectmanagement.com/profile/nickcoleman" target="blank">
+  								Project Management Professional (PMP) -- PMI Cert #: 1342546
+  							</a>
+              </span>
 						</p>
 						<p>
 							<span class="aboutLink"><a href="http://nickcoleman.io/docs/resume.pdf" target="_blank">
-								See Full Resume
+								Find Out More About Me
 							</a></span>
 						</p>
 					</div>
@@ -335,12 +382,12 @@
 				</div> -->
 				<div class="col">
 					<a href="https://www.linkedin.com/in/nick-coleman" target="blank">
-						<button type="button" class="btn btn-secondary btn-sm homeButton"><i class="fa fa-linkedin"></i> Linked-In</button>
+						<button type="button" class="btn btn-outline-secondary btn-md homeButton"><i class="fa fa-linkedin"></i> Linked-In</button>
 					</a>
 				</div>
 				<div class="col">
 					<a href="https://github.com/nickcoleman" target="blank">
-						<button type="button" class="btn btn-secondary btn-sm homeButton"><i class="fa fa-github"></i> GitHub</button>
+						<button type="button" class="btn btn-outline-secondary btn-md homeButton"><i class="fa fa-github"></i> GitHub</button>
 					</a>
 				</div>
 				<div class="col">

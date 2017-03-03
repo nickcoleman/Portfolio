@@ -46,6 +46,25 @@ img.navbarLogo {
     margin-right: 5px;
 }
 
+.appButton
+{
+    margin-top: 10px;
+    width: 80%;
+    height: auto;
+}
+
+.githubButton
+{
+    width: 20%;
+    max-width: 300px;
+    height: auto;
+    margin: 10px;
+}
+
+.githubButton > a:hover {
+    fill: '#ffff99'
+}
+
 .navbar-inverse
 {
     background-color: #c0c0c0;
@@ -149,8 +168,8 @@ img.navbarLogo {
     /*margin-left: 10px;*/
     margin-bottom: 10px;
 
-    background-color: #c0c0c0;
-    color: #00004d;
+    /*background-color: #c0c0c0;*/
+    color: white;
     box-shadow: 2px 1px 2px #000;
 }
 
@@ -301,7 +320,14 @@ img.navbarLogo {
     color: #00004d;
     margin-top: 10px;
     margin-bottom: 10px;
-    min-height: 900px;
+    min-height: 1100px;
+}
+
+.projectImage
+{
+    padding: 20px;
+    width: 100%;
+    height: auto;
 }
 
 .cardHeadder, .cardDescription{
