@@ -23,7 +23,11 @@ html
 body
 {
     font-family: 'Lato', sans-serif;
-    background-color: #2c3e50;
+    /*background-color: #2c3e50;*/
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
 }
 
 hr
@@ -67,37 +71,44 @@ img.navbarLogo {
 
 .navbar-inverse
 {
-    background-color: #c0c0c0;
+    background: url("../images/bg-pattern.png"), #7b4397;
+    /* fallback for old browsers */
+    background: url("../images/bg-pattern.png"), -webkit-linear-gradient(to left, #7b4397, #dc2430);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: url("../images/bg-pattern.png"), linear-gradient(to left, #7b4397, #dc2430);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+
 }
 
 .navbar-inverse .navbar-brand
 {
-    color: #000;
+    color: #fff;
 }
 
 .navbar-inverse .navbar-nav .nav-link
 {
-    background: color: #00004d;
+    color: #fff;
 }
 
 .navbar-inverse .navbar-toggler
 {
-    border-color: #00004d;
+    border-color: #fff;
 }
 
 .navbar-inverse .navbar-toggler-icon {
-    color: #00004d;
+    color: #fff;
 }
 
 .navbar-inverse .navbar-nav .nav-link {
-    color: #00004d;
+    color: #fff;
 }
 
 .nav-link > a:hover,
 .nav-link > a:focus
 {
     /*background-color: #adbfd2;*/
-    color: #2c3e50;
+    color: #00004d;
 }
 
 /***********************************
@@ -181,20 +192,12 @@ img.navbarLogo {
     width: 100%;
     height: auto;
     padding-top: 50px;
-    background: #fdcc52
+    /*background: #fdcc52*/
+    /*Pastel Orange at the Sun*/
+    background: #ffb347; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #ffb347 , #ffcc33); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #ffb347 , #ffcc33); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
-    /*background-image: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(0, 0, 0, 0.5)
-        ),
-        url( '../images/sky.png' );
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    -webkit-background-size: cover;
-       -moz-background-size: cover;
-         -o-background-size: cover;
-            background-size: 100% 100%;
-            background-size: cover;*/
 }
 
 .aboutHeader > h2
@@ -351,7 +354,7 @@ img.navbarLogo {
           rgba(0, 0, 0, 0.25),
           rgba(0, 0, 0, 0.25)
         ),
-        url('../images/desktop.png');
+        url('../images/parkCityUtah.png');
     background-repeat: no-repeat;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -392,6 +395,10 @@ img.navbarLogo {
 .connectContentLeft
 {
     float: right;
+}
+
+.connectButtons {
+    margin-top: 20px;
 }
 
 .connectContentRight h5 {
