@@ -111,6 +111,11 @@ img.navbarLogo {
     color: #00004d;
 }
 
+.card-subtitle {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
 /***********************************
         Home Section
 ***********************************/
@@ -229,6 +234,7 @@ img.navbarLogo {
     padding-top: 10%;
     padding-bottom: 25%;
     padding-left: 10%;
+    padding-right: 10%;
 }
 
 .aboutLink > a
