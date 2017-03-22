@@ -53,7 +53,7 @@ img.navbarLogo {
 .appButton
 {
     margin-top: 10px;
-    width: 80%;
+    width: 60%;
     height: auto;
 }
 
@@ -70,7 +70,9 @@ img.navbarLogo {
 }
 
 .websiteButton {
-    margin-top: 10px;
+    width: 60%;
+    font-size: 1.25em;
+    font-style: italic;
 }
 
 .navbar-inverse
