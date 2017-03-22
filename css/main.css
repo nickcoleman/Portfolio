@@ -57,7 +57,7 @@ img.navbarLogo {
     height: auto;
 }
 
-.githubButton, .demoButton, .landingPageButton
+.githubButton
 {
     width: 20%;
     max-width: 300px;
@@ -67,6 +67,10 @@ img.navbarLogo {
 
 .githubButton > a:hover {
     fill: '#ffff99'
+}
+
+.websiteButton {
+    margin-top: 10px;
 }
 
 .navbar-inverse
