@@ -57,7 +57,7 @@ img.navbarLogo {
     height: auto;
 }
 
-.githubButton
+.githubButton, .demoButton, .landingPageButton
 {
     width: 20%;
     max-width: 300px;
