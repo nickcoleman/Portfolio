@@ -419,3 +419,10 @@ img.navbarLogo {
     float: left
     font-size: 2em;
 }
+
+.footer-links {
+    position: absolute;
+    margin 0 auto;
+    bottom: 30px;
+    width: 100%;
+}
