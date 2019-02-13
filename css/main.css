@@ -421,8 +421,7 @@ img.navbarLogo {
 }
 
 .footer-links {
-    position: absolute;
-    margin 0 auto;
-    bottom: 30px;
+    position: fixed;
+    bottom: 0;
     width: 100%;
 }
