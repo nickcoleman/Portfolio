@@ -427,3 +427,8 @@ img.navbarLogo {
     width: 90%;
     text-align: center;
 }
+
+.footer-link {
+    text-decoration: none;
+    color: gray;
+}
