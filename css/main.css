@@ -431,4 +431,5 @@ img.navbarLogo {
 .footer-link {
     text-decoration: none;
     color: black;
+    font-size: .25em;
 }
